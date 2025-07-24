@@ -112,7 +112,7 @@ class VectorStore:
         documents = []
         for idx, row in df.iterrows():
             # Create a formatted text representation of the row
-            content = f"Notification Type: {row['Notificn type']}\n" \
+            content = f"Notification Type: {row['Notifictn type']}\n" \
                      f"Description: {row['Description']}\n" \
                      f"Main Work Center: {row['Main WorkCtr']}\n" \
                      f"FPSO: {row['FPSO']}"
