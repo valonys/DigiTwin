@@ -78,14 +78,14 @@ class VectorStore:
                 df = pd.read_excel(file_path, sheet_name='Global Notifications')
                 
                 # Check if required columns exist
-                required_columns = ["Notificn type", "Description", "Main WorkCtr", "FPSO"]
+                required_columns = ["Notifictn type", "Description", "Main WorkCtr", "FPSO"]
                 missing_columns = [col for col in required_columns if col not in df.columns]
                 
                 if missing_columns:
                     raise ValueError(f"Missing required columns: {', '.join(missing_columns)}")
                 
                 # Filter to retain only specific columns
-                df = df[["Notificn type", "Description", "Main WorkCtr", "FPSO"]]
+                df = df[["Notifictn type", "Description", "Main WorkCtr", "FPSO"]]
                 
                 # Remove rows with no description
                 df = df.dropna(subset=["Description"])
