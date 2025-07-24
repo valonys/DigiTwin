@@ -121,7 +121,7 @@ class VectorStore:
             metadata = {
                 "source": file_path,
                 "row_index": idx,
-                "notification_type": row['Notificn type'],
+                "notification_type": row['Notifictn type'],
                 "main_workctr": row['Main WorkCtr'],
                 "fpso": row['FPSO']
             }
